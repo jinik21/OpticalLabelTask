@@ -5,7 +5,7 @@ def rbg2bla(image):
     #blur=cv2.GaussianBlur(gray,(3,3),0)        #NOISE REDUCING OPTIONAL
     return gray
 def sobel_create(img,p1,p2,ksize,h,w,borderType):
-    #img=cv2.Canny(img,50,150)           canny image testing 
+    #img=cv2.Canny(img,50,150)          # canny image testing better results of sobel cross 
     sobel_obj=cv2.Sobel(img, cv2.CV_64F, p1, p2, ksize=ksize)
 
     h=int(0.1*h)
